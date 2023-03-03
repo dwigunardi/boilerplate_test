@@ -2,10 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { useRecoilState, useRecoilValue } from 'recoil'
+import { testSelector, themeState } from '@/store/Atom'
+import { Button } from 'antd'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  // const data = useRecoilValue(testSelector)
+  // const [stateTheme, setStateTheme] = useRecoilState(themeState)
+  // const currentTheme = stateTheme == 'dark' ? '#000' : '#fff'
+  // console.log(currentTheme)
   return (
     <>
       <Head>
@@ -117,6 +124,8 @@ export default function Home() {
             </p>
           </a>
         </div>
+      
+          
       </main>
     </>
   )
