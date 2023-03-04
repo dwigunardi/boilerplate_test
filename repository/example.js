@@ -19,7 +19,9 @@ const api = {
   createPost(data) {
     return http.post(url.getPost(), data);
   },
- 
+  getApiPostById(id) {
+    return http.fetcher(url.getPostById(id));
+  },
 };
 
 export const exampleRepository = {

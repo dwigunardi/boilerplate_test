@@ -1,9 +1,5 @@
-import superagent from "superagent";
-import superagentIntercept from 'superagent-intercept';
 import {appConfig} from "../config/app";
 import {TokenUtil} from "./token";
-import {attachSuperagentLogger} from "./http_logger";
-import { authenticationRepository } from "@/repository/authentication";
 import axios from "axios";
 
 
